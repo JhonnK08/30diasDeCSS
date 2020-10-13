@@ -1,28 +1,33 @@
-body
-{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+body {
+    text-align: center;
     align-items: center;
-    background-color: rgb(168, 244, 247);
+    background-color: lightblue;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
-h1
-{
-    color: rgb(0, 0, 0);
-    font-size: 50px;
+
+h1 {
+    font-size: 40px;
     font-family: 'Press Start 2P', cursive;
 }
-span::before
-{
+
+span::before {
     content: '';
-    animation: word-swith 3s infinite;
+    animation: 3s mudar infinite linear;
+    font-size: 50px;
 }
 
-@keyframes word-swith 
-{
-    0% {content: '💻'}
 
-    50%{content: '🍕';}
-
-    100%{content: '🎮';}
+@keyframes mudar {
+    0% {
+        content: '\01F436';
+    }
+    50% {
+        content: '\01F3AE';
+    }
+    100% {
+        content: '\01F36B';
+    }
 }
