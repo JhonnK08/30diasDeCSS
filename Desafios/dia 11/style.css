@@ -1,44 +1,42 @@
-body
-{
-    margin: 0;
-    display: flex;
+body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: sans-serif;
+    display: flex;
+    
 }
-.btn
-{
-    border: 2px solid rgb(0, 165, 124);
+
+.btn {
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 20px;
     background: none;
-    color: rgb(0, 165, 124);
-    padding: 20px 40px;
-    font-size: 25px;
+    font-size: 30px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.5s;
     position: relative;
     overflow: hidden;
 }
-.btn:hover
-{
+
+.btn:hover {
     color: white;
 }
-.btn::before
-{
-    content: "";
-    position: absolute;
+
+.btn::before {
+    content: '';
+    background-color: blue;
+    border-radius: 0 0 50% 50%;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgb(0, 165, 124);
-    z-index: -1;
-    border-radius: 0 0 50% 50%;
     height: 0%;
-    transition: all 0.5s;
-}
-.btn:hover::before{
-    height: 190%;
+    z-index: -1;
+    transition: 0.5s all;
+    position: absolute;
 }
 
+.btn:hover::before {
+    height: 200%;
+}
