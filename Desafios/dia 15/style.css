@@ -1,31 +1,35 @@
-body
-{
+body {
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #f33131b2;
+    align-content: center;
+    justify-content: center;
+    background: crimson;
 }
-h1
-{
+
+h1 {
     text-align: center;
+    font-size: 70px;
     color: white;
-    font-family: arial;
-    font-size: 90px;
-    line-height: 90px;
-    letter-spacing: 15px;
-    text-shadow: 0 1px 0 #efefef,
-                 0 2px 0 #efefef,
-                 0 3px 0 #efefef,
-                 0 4px 0 #efefef,
-                 0 30px 5px rgba(0,0,0,.1);
-    animation: float 3s linear infinite;
-    animation-direction: alternate;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 25px 9px rgba(0,0,0,0.75);
+    animation: 4s teste linear infinite;
 }
 
-@keyframes float 
-{
-    from {transform: rotate(5deg);}
 
-    to {transform: rotate(-5deg);}
+
+@keyframes teste {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
