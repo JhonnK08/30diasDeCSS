@@ -1,48 +1,40 @@
 body {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    background-color: #00473e;
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
+    list-style-type: none;
+    display: flex;
 }
 
-li {
-	list-style: none;
-	color: rgb(202, 235, 245);
-	font-size: 100px;
-	font-weight: bold;
-	letter-spacing: 10px;
-	transition: 2s;
+ul li {
+    color: white;
+    font-size: 80px;
+    transition: 2.5s;
 }
 
 ul:hover li {
-	transform: rotate(45deg) translateY(-200px);
-	opacity: 0;
-	filter: blur(20px);
+    transform: rotate(45deg) translateY(-100px);
+    filter: blur(10px);
+    opacity: 0;
 }
 
 ul li:nth-child(1) {
-	transition-delay: 0;
+    transition-delay: 0s;
 }
-
 ul li:nth-child(2) {
-	transition-delay: 0.4s;
+    transition-delay: 0.5s;
 }
-
 ul li:nth-child(3) {
-	transition-delay: 0.8s;
+    transition-delay: 1s;
 }
-
 ul li:nth-child(4) {
-	transition-delay: 1.2s;
+    transition-delay: 1.5s;
 }
-
 ul li:nth-child(5) {
-	transition-delay: 1.6s;
+    transition-delay: 2s;
 }
